@@ -63,7 +63,7 @@ function updateFilters(d, index, nodes) {
         if (value) {
             filters[id] = value;
         } else {
-            filters.delete(id);
+            delete filters[id];
         }
     } else if (value) {
         filters[id] = value;
@@ -72,7 +72,7 @@ function updateFilters(d, index, nodes) {
 
 function filterTable() {
     //set the filtered data to table data to reset before filtering
-    let filteredData = tableData;
+    let filteredData = data;
     //get all the fields whih has changed and needs to be used for filtering
     let filterFields = Object.keys(filters);
     //loop through all the fields which changed and using the value entered filter the data
