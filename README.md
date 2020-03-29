@@ -21,8 +21,10 @@
 
 ### Overview:
 
-   Enhance the webpage to include addition filters for narrowing down the UFO sightings data based on Country, City, State, Shape of the UFO along with date.
+   Enhance the webpage to include additional filters for narrowing down the UFO sightings data based on Country, City, State, Shape of the UFO along with the date.
    
 ### Description:
 
+   Using a challenge event for the filtered fields we developed the webpage to capture the change as the user changes the filter data and filtered the UFO sighting data and rebuild the table. Also filtered data only if all the values entered matches similar to SQL AND condition. If all the filter fields are entered like Country, City, State, Shape, and Date we render the data only if it matches all the value entered if not an empty table is rendered.![All filters matched data](doc/images/all_filters_match.png) ![No Data match filter criterias](doc/images/no_data_match.png)
    
+   Additionally provided the Reload Data button to refresh the data table to bring the original UFO sightings data and to reset the filter field (reset filters).
